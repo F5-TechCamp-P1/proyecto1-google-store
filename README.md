@@ -4,6 +4,6 @@ The goal is to develop a fully functional website using HTML5, CSS3, and JavaScr
 *** Desde aqui se puede borrar cuando termine la implementacion de la estructura.
 En la carpeta principal del proyecto, habra que borrar en el proceso de cleanup todos los archivos menos los siguientes:
 
-*Carpeta src
-*LICENSE
-*README.md
+* Carpeta src
+* LICENSE
+* README.md
