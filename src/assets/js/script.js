@@ -9,6 +9,6 @@ document.addEventListener("DOMContentLoaded", function() {
             .catch(error => console.error('Error cargando el archivo:', error));
     }
    
-    loadHTML('header.html', 'header-placeholder');
-    loadHTML('footer.html', 'footer-placeholder');
+    loadHTML('src/partials/_header.html', 'header-placeholder');
+    loadHTML('src/partials/_footer.html', 'footer-placeholder');
 });
