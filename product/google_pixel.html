@@ -1,12 +1,89 @@
 <!DOCTYPE html>
-<html lang="">
+<html lang="en">
   <head>
-    <meta charset="utf-8">
-    <title></title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GoogleStore</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link href="/src/assets/css/pixel.css" rel="stylesheet" />
   </head>
   <body>
-    <header></header>
-    <main></main>
-    <footer></footer>
+        <header id="header-placeholder"></header>
+
+
+    <main class="main-box">
+      <div class="boton_1">
+          <a href="https://store.google.com/es/?hl=es">See product details</a>
+      </div>
+      <br>
+      <div class="caja-principal">
+       
+     
+      
+        <!-- Botones para la izquierda / organizar enm CSS-->
+        <div class="botones_izquierda">
+          <button class="boton_2 borde"><img class="img_asdf" src="/src/assets/images/google_pixel_9_pro_xl_rosa_1_.jpg" alt="" onclick="cambiarImagen(this)"/></button>
+          <button class="boton_2 borde"><img class="img_asdf" src="/src/assets/images/google_pixel_9_pro_xl_rosa_2_.jpg" alt="" onclick="cambiarImagen(this)"/></button>
+          <button class="boton_2 borde"><img class="img_asdf" src="/src/assets/images/google_pixel_9_pro_xl_rosa_3_.jpg" alt="" onclick="cambiarImagen(this)"/></button>
+          <button class="boton_2 borde"><img class="img_asdf" src="/src/assets/images/google_pixel_9_pro_xl_rosa_4_.jpg" alt="" onclick="cambiarImagen(this)"/></button>
+        </div>
+
+        <!--Imagen central -->
+        <div class="caja-foto">
+          <img id="imagen-principal" src="/src/assets/images/google_pixel_9_pro_xl_rosa_5_.jpg" alt="pixel 9" />
+        </div>
+
+        <div>
+          <!-- Caja de la derecha  -->
+          <div class="caja-cliente-seleccion-producto">
+            <div>
+              <h1>Pixel 9</h1>
+              <h3 class="caja-precio-cantidad">
+                Desde 799 € <del>899 € </del>
+              </h3>
+              <p>o 266,33 €/mes con 3 cuotas mensuales*</p>
+              <!--Poner que la palabre mensuales tenga una pequeño ventana de texto -->
+              <p>Precio de venta habitual: 899 €</p>
+            </div>
+            <br>
+            <hr/>
+            <br/>
+            <br>
+
+            <h2>Elige un color</h2>
+            <div class="caja-elige-color">
+              <br>
+              <br>
+              <button class="boton"><div class="boton_dato rosa"></div>Rosa Peonía</button>
+              <button class="boton"><div class="boton_dato verde"></div>Verde pastel</button>
+              <button class="boton"><div class="boton_dato porcelana"></div>Porcelana</button>
+              <button class="boton"><div class="boton_dato obsidian"></div>Obsidiana</button>
+            </div>
+            <br />
+            <br>
+            <hr />
+            <br>
+            <br>
+            <h2>Elige tu espacio de almacenamiento<sup>1</sup></h2>
+            <br>
+            <button class="boton_tamaño">
+              <h3>128 GB</h3>
+              <p>799 €</p>
+            </button>
+            <button class="boton_tamaño">
+              <h3>256 GB</h3>
+              <p>899 €</p>
+            </button>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer id="footer-placeholder"></footer>
+
+    <script src="/src/assets/js/script.js"></script>
   </body>
 </html>
