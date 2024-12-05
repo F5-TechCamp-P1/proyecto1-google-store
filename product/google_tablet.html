@@ -4,32 +4,57 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GoogleStore</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="/src/assets/css/tablet.css">
 </head>
+
 <body>
     <header id="header-placeholder"></header>
-
     <br>
-    <div class="exit">
+    <div class="exit-img">
+        <img class="img-exit" src="/src/images/icons/flecha.png" alt="Flecha">
         <p>See product details</p>
     </div>
     <main>
         <div class="main-box">
+            <div class="photos-box">
+                <div class="photos">
+                    <img src="../src/assets/images/google-pixel-tablet.jpg" alt="Imagen 1" onclick="cambiarImagen(this)">
+                    <img src="../src/assets/images/pxtablet.webp" alt="Imagen 2" onclick="cambiarImagen(this)">
+                </div>
+            </div>
 
             <div class="image-box">
-                <img src="" alt="Google tablet">
+                <img id="imagen-principal" src="../src/assets/images/google-pixel-tablet.jpg" alt="Imagen principal">
             </div>
             <div class="product-options">
-                <p>Potección con estilo.</p>
-                <div class="price-box"></div>
+                <h1>Protección con estilo.</h1>
+                <p class="descripcion">Protege tu Pixel 9, Pixel 9 Pro o Pixel 9 Pro XL de caídas y arañazos con una funda que se ajusta como un guante.</p>
+                <p class="tamaño">Elige un tamaño de caja</p>
+                <p class="tamaño"><strong>Pixel 9 + Pixel 9 Pro</strong></p>
+                <section>
+                    <button class="boton1">Pixel 9 + Pixel 9 Pro</button>
+                    <button class="boton1">Pixel 9 Pro XL</button>
+                </section>
+                <p class="tamaño">Selecciona un color</p>
+                <section>
+                    <p class="tamaño"><strong>Obsidiana</strong></p>
+                    <button class="boton-negro" aria-label="Obsidiana"></button>
+                    <button class="boton-beige" aria-label="Beige"></button>
+                    <button class="boton-gris" aria-label="Gris"></button>
+                    <button class="boton-rosita" aria-label="Rosita"></button>
+                    <button class="boton-verde" aria-label="Verde"></button>
+                    <button class="boton-fucsia" aria-label="Fucsia"></button>
+                </section>
+                <div class="price-box">
+                    <h2>39,99€</h2>
+                    <button class="carrito">Añadir al carrito</button>
+                </div>
             </div>  
-            
         </div>
-        
     </main>
-    
+
     <footer id="footer-placeholder"></footer>
 
-    <script src="script.js"></script>
+    <script src="../src/assets/js/script.js"></script>
 </body>
 </html>
