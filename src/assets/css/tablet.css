@@ -1,85 +1,279 @@
-*{
-    margin: 0; 
-    box-sizing:content-box;
- }
- 
-header{
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+#header {
+    position: fixed; /* Fija el header en la parte superior */
+    top: 0; /* Alinea el header con la parte superior de la pantalla */
+    left: 0; /* Alinea el header con el borde izquierdo */
+    width: 100%; /* Hace que el header ocupe todo el ancho de la pantalla */
+    z-index: 1000; /* Asegura que el header esté por encima de otros elementos */
+    background-color: white; /* Fondo blanco para el header */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra sutil debajo del header */
+    padding: 10px 0; /* Un poco de espacio interno para que se vea bien */
+}
+
+/* Para evitar que el contenido se solape con el header, agregamos un padding superior al body */
+body {
+    padding-top: 60px; /* Ajusta esto si tu header tiene más o menos altura */
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: white; 
+    background-color: white;
     padding: 0.5%;
     box-shadow: 3px 3px 3px lightgray;
-    
 }
+
 .nav1 {
-    display: flex;
+    display: inline-flex;
     align-items: center;
 }
-.nav1 p {
-    margin: 0 15px; 
-    font-size: 10px;
-    cursor: pointer;
-}
 
+.nav1 p {
+    margin: 0 15px;
+    font-size: 12px;
+    cursor: pointer;
+    color: grey;
+}
 
 .nav2 img {
-    margin-left: 20px; 
-    width: 16px; 
-    height: 16px; 
+    margin-left: 20px;
+    width: 16px;
+    height: 16px;
     cursor: pointer;
 }
+
 .nav1 .logo {
-    width: 20px; 
-    height: auto; 
+    width: 20px;
+    height: auto;
 }
-footer{
+
+
+
+footer {
     display: flex;
     justify-content: space-around;
     align-items: center;
+    flex-wrap: wrap;
 }
 
-.foot2{
+.foot2 {
     display: flex;
+    justify-content: space-around;
     align-items: center;
-}
-.foot2 p{
-    margin: 0 15px; 
-    font-size: 10px;
-    cursor: pointer;   
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-.main-box{
+.foot2 p {
+    margin: 0 15px;
+    font-size: 10px;
+    cursor: pointer;
+}
+
+.main-box {
     display: flex;
+    gap: 2%;
+    height: auto;
+    flex-wrap: wrap;
+}
+
+.photos-box, .image-box, .product-options {
+    flex: 1 1 300px;
+}
+
+.photos img, .image-box img {
     width: 100%;
-    gap: 20px;
-    height: 630px;
+    height: auto;
+    object-fit: cover;
 }
-.image-box{
-    flex: 2; 
-    margin-left: 20px;
-    display: flex;
-    justify-content:center;
-    border: solid black;
-    border-width: 1px;
-    height: 500px;
-    border-radius: 3%;
-}
-.product-options{
-    flex: 1;
-    display: flex;
-    flex-direction:column;
+
+.product-options {
+    flex-direction: column;
     justify-content: center;
-    border-radius: 3%;
-    border: solid black;
-    border-width: 1px;
-    height: 550px; 
 }
-.price-box{
+
+.boton1 {
+    color: #353449;
+    background-color: white;
+    border-color: #353449;
+    padding: 15px 20px;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+.boton1:hover {
+    background-color: #f0f0f0;
+    border-color: #555;
+}
+
+.boton-negro {
+    background-color: #2D2D2D;
+    border: 1px solid #CCC;
+    border-radius: 50%;
+    padding: 12px 12px;
+}
+
+.boton-negro:hover {
+    transform: scale(1.1);
+    background-color: #555;
+    border-color: #777;
+}
+
+.boton-beige {
+    background-color: #D4CEC2;
+    border: 1px solid #CCC;
+    border-radius: 50%;
+    padding: 12px 12px;
+}
+
+.boton-beige:hover {
+    transform: scale(1.1);
+    background-color: #bfb59f;
+    border-color: #999;
+}
+
+.boton-gris {
+    background-color: #868985;
+    border: 1px solid #CCC;
+    border-radius: 50%;
+    padding: 12px 12px;
+}
+
+.boton-gris:hover {
+    transform: scale(1.1);
+    background-color: #6b6b5e;
+    border-color: #777;
+}
+
+.boton-rosita {
+    background-color: #DADCE0;
+    border: 1px solid #CCC;
+    border-radius: 50%;
+    padding: 12px 12px;
+}
+
+.boton-rosita:hover {
+    transform: scale(1.1);
+    background-color: #c0c4cb;
+    border-color: #aaa;
+}
+
+.boton-verde {
+    background-color: #D4E4C7;
+    border: 1px solid #CCC;
+    border-radius: 50%;
+    padding: 12px 12px;
+}
+
+.boton-verde:hover {
+    transform: scale(1.1);
+    background-color: #a0b89c;
+    border-color: #7a8e7a;
+}
+
+.boton-fucsia {
+    background-color: #EA92A3;
+    border: 1px solid #CCC;
+    border-radius: 50%;
+    padding: 12px 12px;
+}
+
+.boton-fucsia:hover {
+    transform: scale(1.1);
+    background-color: #e27f90;
+    border-color: #c07f80;
+}
+
+.carrito {
+    padding: 12px 12px;
+    background-color: #4CAF50;
+    color: white;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+}
+
+.carrito:hover {
+    background-color: #45a049;
+    transform: scale(1.05);
+}
+
+.price-box {
+    padding: 20px;
     margin-top: auto;
-    padding: 40px;
     flex: 0.2;
     border: solid black;
     border-radius: 3%;
     border-width: 1px;
+    background-color: #f5f5f5;
 }
+
+.img-exit {
+    margin: 10px;
+    width: 12px;
+}
+
+h1 {
+    color: #353449;
+    font-size: 35px;
+}
+
+.descripcion {
+    color: #353449;
+    font-size: 20px;
+}
+
+.tamaño {
+    color: #353449;
+    font-size: 12px;
+}
+
+h2 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-left: 3px;
+}
+
+@media (max-width: 768px) {
+    .nav1 p {
+        font-size: 10px;
+    }
+    footer {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .foot2 p {
+        font-size: 8px;
+    }
+    .main-box {
+        flex-direction: column;
+    }
+}
+/*
+#cart-icon {
+    width: 24px;
+    height: 24px;
+    position: relative;
+    cursor: pointer;
+}
+
+.cart-count {
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    background-color: red;
+    color: white;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    font-size: 12px;
+    font-weight: bold;
+}*/
