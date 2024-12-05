@@ -1,1 +1,164 @@
- 
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+ }
+    
+.main-box{
+    display: flex;
+    width: 100%;
+    gap: 20px;
+    height: 630px;
+}
+.image-box{
+    flex: 2; 
+    margin-left: 20px;
+    display: flex;
+    justify-content:center;
+    border-width: 1px;
+    height: 500px;
+    border-radius: 20px;
+}
+.image-box img{
+    height: auto;
+    border-radius: 5%;
+}
+.product-options{
+    flex: 1;
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    border-radius: 3%;
+    border-width: 1px;
+    height: 550px;
+    margin-right: 2%;
+}
+.price-box{
+    margin-right:3%;
+    margin-left: -9%;
+    margin-top: auto;
+    padding: 40px;
+    flex: 0.2;
+    border-radius: 3%;
+    border-width: 1px;
+}
+.img-exit{
+    margin: 10%;
+    width: 12%;
+}
+p{
+     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 13%;
+}
+
+h1 {
+    color: #353449;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 35%;
+}
+
+.descripcion{
+        color: #353449;
+        font-size: 20px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.tamaño{
+        color: #353449;
+        font-size: 12px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.boton1{
+        color: #353449;
+        background-color: white;
+        border: 1px solid #CCC;
+        padding: 15px 20px;
+        border-radius: 5px;
+        box-shadow: none;
+        margin-right: 10px;
+}
+
+.boton-negro{
+            padding: 12px 12px;
+            margin-right: 12px;
+            border-radius: 50%;
+            background-color: #2D2D2D;
+            border: 1px solid #CCC
+}
+
+.boton-beige{
+    padding: 12px 12px;
+    margin-right: 12px;
+    border-radius: 50%;
+    background-color: #D4CEC2;
+    border: 1px solid #CCC
+}
+
+.boton-gris{
+    padding: 12px 12px;
+    margin-right: 12px;
+    border-radius: 50%;
+    background-color: #868985;
+    border: 1px solid #CCC
+}
+
+.boton-rosita{
+    padding: 12px 12px;
+    margin-right: 12px;
+    border-radius: 50%;
+    background-color: #DADCE0;
+    border: 1px solid #CCC
+}
+
+.boton-verde{
+    padding: 12px 12px;
+    margin-right: 12px;
+    border-radius: 50%;
+    background-color: #D4E4C7;
+    border: 1px solid #CCC
+}
+
+
+.boton-fucsia{
+    padding: 12px 12px;
+    margin-right: 12px;
+    border-radius: 50%;
+    background-color: #EA92A3;
+    border: 1px solid #CCC
+}
+
+h2 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-left: 3px;
+    color: #353449;
+}
+
+.selector{
+        padding: 12px 12px;
+
+}
+.carrito{
+    padding: 8px 130px;
+    border-radius: 5px;
+    border: 1px solid #1a73e8;
+    border-color: #1a73e8;
+    background-color: #1a73e8;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white
+}
+
+.selector{
+    padding: 9px 20px;
+    border-radius: 5px;
+    border-color: #CCC;
+    border: 1px solid #CCC;
+    background-color: white;
+    color: #353449; 
+}
+.selector::after { content: '▼'; 
+    font-size: 12px; 
+    margin-left: 5px;
+    color: #353449; 
+}
+
+
