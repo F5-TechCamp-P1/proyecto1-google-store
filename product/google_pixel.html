@@ -9,6 +9,7 @@
       rel="stylesheet"
     />
     <link href="/src/assets/css/pixel.css" rel="stylesheet" />
+    
   </head>
   <body>
         <header id="header-placeholder"></header>
@@ -16,7 +17,7 @@
 
     <main class="main-box">
       <div class="boton_1">
-          <a href="https://store.google.com/es/?hl=es">See product details</a>
+          <a href="https://store.google.com/es/?hl=es"><img src="/src/assets/icons/Arrow.svg" alt=""></i> See product details</a>
       </div>
       <br>
       <div class="caja-principal">
@@ -25,10 +26,10 @@
       
         <!-- Botones para la izquierda / organizar enm CSS-->
         <div class="botones_izquierda">
-          <button class="boton_2 borde"><img class="img_asdf" src="/src/assets/images/google_pixel_9_pro_xl_rosa_1_.jpg" alt="" onclick="cambiarImagen(this)"/></button>
-          <button class="boton_2 borde"><img class="img_asdf" src="/src/assets/images/google_pixel_9_pro_xl_rosa_2_.jpg" alt="" onclick="cambiarImagen(this)"/></button>
-          <button class="boton_2 borde"><img class="img_asdf" src="/src/assets/images/google_pixel_9_pro_xl_rosa_3_.jpg" alt="" onclick="cambiarImagen(this)"/></button>
-          <button class="boton_2 borde"><img class="img_asdf" src="/src/assets/images/google_pixel_9_pro_xl_rosa_4_.jpg" alt="" onclick="cambiarImagen(this)"/></button>
+          <button class="boton_2 borde"><img class="img_asdf" id="img-boton-1" alt="Imagen 2" onclick="cambiarImagenDeBoton(0)" src="/src/assets/images/google_pixel_9_pro_xl_rosa_1_.jpg"/></button>
+          <button class="boton_2 borde"><img class="img_asdf" id="img-boton-2" alt="Imagen 2" onclick="cambiarImagenDeBoton(1)" src="/src/assets/images/google_pixel_9_pro_xl_rosa_2_.jpg"/></button>
+          <button class="boton_2 borde"><img class="img_asdf" id="img-boton-3" alt="Imagen 3" onclick="cambiarImagenDeBoton(2)" src="/src/assets/images/google_pixel_9_pro_xl_rosa_3_.jpg"/></button>
+          <button class="boton_2 borde"><img class="img_asdf" id="img-boton-4" alt="Imagen 4" onclick="cambiarImagenDeBoton(3)" src="/src/assets/images/google_pixel_9_pro_xl_rosa_4_.jpg"/></button>
         </div>
 
         <!--Imagen central -->
@@ -57,10 +58,10 @@
             <div class="caja-elige-color">
               <br>
               <br>
-              <button class="boton"><div class="boton_dato rosa"></div>Rosa Peonía</button>
-              <button class="boton"><div class="boton_dato verde"></div>Verde pastel</button>
-              <button class="boton"><div class="boton_dato porcelana"></div>Porcelana</button>
-              <button class="boton"><div class="boton_dato obsidian"></div>Obsidiana</button>
+              <button class="boton" onclick="cambiarImagenPorColor('rosa')"><div class="boton_dato rosa"></div>Rosa Peonía</button>
+              <button class="boton" onclick="cambiarImagenPorColor('verde')"><div class="boton_dato verde"></div>Verde pastel</button>
+              <button class="boton" onclick="cambiarImagenPorColor('porcelana')"><div class="boton_dato porcelana"></div>Porcelana</button>
+              <button class="boton" onclick="cambiarImagenPorColor('obsidian')"><div class="boton_dato obsidian"></div>Obsidiana</button>
             </div>
             <br />
             <br>
@@ -77,6 +78,7 @@
               <h3>256 GB</h3>
               <p>899 €</p>
             </button>
+            <button class="carrito">Añadir al carrito</button>
           </div>
         </div>
       </div>
