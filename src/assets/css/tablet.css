@@ -289,6 +289,17 @@ h2 {
     .main-box {
         flex-direction: column;
     }
+    .photos-box {
+        flex-direction: row; /* Asegura que las miniaturas se alineen de forma horizontal */
+        margin-bottom: 20px;
+    }
+    .image-box {
+        height: 300px; /* Reduce la altura en pantallas pequeñas */
+    }
+    .product-options {
+        flex: 1;
+    }
+
 }
 /*
 #cart-icon {
