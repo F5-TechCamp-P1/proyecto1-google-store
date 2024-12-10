@@ -5,6 +5,7 @@ document.addEventListener("DOMContentLoaded", function() {
             .then(response => response.text())
             .then(data => {
                 document.getElementById(elementId).innerHTML = data;
+                console.log('Header cargado correctamente');
             })
             .catch(error => console.error('Error cargando el archivo:', error));
     }
@@ -21,15 +22,30 @@ function cambiarImagen(imagen) {
   }
 
 
-// Obtener el botón de "Añadir al carrito" y el contador del carrito
-const carritoButton = document.querySelector('.carrito');
-const contadorUnidades = document.getElementById('cart-count');
+  document.addEventListener("DOMContentLoaded", function() {
+    const carritoButton = document.querySelector('.carrito');
+    const contadorUnidades = document.getElementById('cart-count');
 
-// Inicializamos el contador de productos
-let sumaProductos = 0;
+    console.log(contadorUnidades); // Verifica si el contador se encuentra
 
-// Función para añadir productos al carrito
-carritoButton.addEventListener('click', function() {
-    sumaProductos++; // Aumentar la cantidad de productos
-    contadorUnidades.textContent = sumaProductos; // Actualizar el texto del contador
+    let sumaProductos = 0;
+
+    carritoButton.addEventListener('click', function() {
+        sumaProductos++; // Aumentar la cantidad de productos
+        console.log(sumaProductos); // Verifica el contador de productos
+        if (contadorUnidades) {
+            contadorUnidades.textContent = sumaProductos; // Actualizar el texto del contador
+        } else {
+            console.error("No se encontró el contador");
+        }
+    });
+});
+
+// Obtén el elemento de hamburguesa y el menú de navegación
+const menuToggle = document.querySelector('.menu-toggle');
+const nav1 = document.querySelector('.nav1');
+
+// Agrega un evento de clic para alternar la visibilidad del menú
+menuToggle.addEventListener('click', () => {
+    nav1.classList.toggle('active');
 });

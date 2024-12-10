@@ -14,10 +14,7 @@
     padding: 10px 0; /* Un poco de espacio interno para que se vea bien */
 }
 
-/* Para evitar que el contenido se solape con el header, agregamos un padding superior al body */
-body {
-    padding-top: 60px; /* Ajusta esto si tu header tiene más o menos altura */
-}
+
 
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -80,19 +77,46 @@ footer {
 
 .main-box {
     display: flex;
-    gap: 2%;
-    height: auto;
-    flex-wrap: wrap;
-}
-
-.photos-box, .image-box, .product-options {
-    flex: 1 1 300px;
-}
-
-.photos img, .image-box img {
+    justify-content: center;  /* Centra los elementos horizontalmente */
+    align-items: center;      /* Centra los elementos verticalmente */
     width: 100%;
-    height: auto;
-    object-fit: cover;
+    height: 100%;
+    padding: 20px;
+}
+
+.photos-box {
+    display: flex;
+    flex-direction: column;
+}
+.image-box {
+    flex: 3; /* Asigna más espacio al contenedor de la imagen */
+    display: flex;
+    justify-content: center;
+   
+    height: 500px;
+    border-radius: 3%;
+}
+.product-options {
+    flex: 1.5;  /* Reduce el tamaño en comparación con image-box */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 3%;
+    height: 400px;  /* Reduce la altura */
+}
+
+ 
+.left-photo{
+    margin: 25px;
+    border-radius: 115%;
+    width: 50px;
+    height: 50px;
+    border: solid snow 2px;
+    background-color: white;
+}
+
+.left-photo:hover{
+    border: solid blue 1px;
 }
 
 .product-options {
@@ -236,10 +260,20 @@ h1 {
     font-size: 12px;
 }
 
+.seleccion{
+    color: #353449;
+    font-size: 20px;
+}
+
 h2 {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin-left: 3px;
 }
+
+/* Asegura que los elementos dentro del botón se alineen correctamente */
+
+
+
 
 @media (max-width: 768px) {
     .nav1 p {
@@ -255,6 +289,17 @@ h2 {
     .main-box {
         flex-direction: column;
     }
+    .photos-box {
+        flex-direction: row; /* Asegura que las miniaturas se alineen de forma horizontal */
+        margin-bottom: 20px;
+    }
+    .image-box {
+        height: 300px; /* Reduce la altura en pantallas pequeñas */
+    }
+    .product-options {
+        flex: 1;
+    }
+
 }
 /*
 #cart-icon {
