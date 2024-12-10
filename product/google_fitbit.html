@@ -5,60 +5,65 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GoogleStore</title>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
-    <link href="src/assets/common.css" rel="stylesheet">
-    <link href="src/assets/fitbit.css" rel="stylesheet">
+    <link href="/src/assets/css/common.css" rel="stylesheet">
+    <link href="/src/assets/css/fitbit.css" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <nav>
-            <div class="nav1">
-                <img class="logo" src="src/images/google-logo.png" alt="Logo_Google">
-                <p>Phones</p>
-                <p>Watches</p>
-                <p>Smart Home</p>
-                <p>Accesories</p>
-                <p>Subcriptions</p>
-            </div>
-            <div class="nav2">
-                <img src="src/images/icons/Search.svg" alt="buscar">
-                <img src="src/images/icons/Help.svg" alt="ayuda">
-                <img src="src/images/icons/Cart.svg" alt="carrito">
-                <img src="src/images/icons/Avatar.svg" alt="avatar">
-            </div>
-        </nav>
-    </header>
+    <header id="header-placeholder"></header>
+    <br>
+    <div class="exit-img">
+        <button class="back-main">
+        <img src="/src/assets/icons/Arrow.svg" alt="flecha" class="arrow-img">
+        <a href="/index.html"><p>See product details</p></a>
+        </button>
+    </div>
     <main>
         <div class="caja-principal">
             <div class="caja-foto">
-                <img src="src/images/mockups_desktop/fitbit3.png" alt="smartwatch">
+                <img id="imagen-principal" src="/src/assets/images/fitbit_negro.jpg" alt="smartwatch">
             </div>
+
             <div class="caja-cliente-seleccion-producto">
-                <div class="caja-elige-color">
-                    <p>Fitbit Inspire 3</p>
+                <h1>Fitbit Inspire 3</h1>
+                <p class="descripcion">Health & Fitness Tracker</p>
+                <h1 class="precio"><strong>99,95 €</strong></h1>
+                <br>
+                <hr>
+                <br>
+            <section>
+                <p class="color">Choose a color</p>
+                <div class="contenedor">
+                    <ul>
+                        <li><a href="/src/assets/images/fitbit_negro.jpg" class="boton-enlace">
+                            <img src="/src/assets/images/minifitbit_negro.jpg" alt="Fitbit Negro" class="imagen-boton">
+                            Midnight Zen
+                        </a></li>
+                        <li><a href="/src/assets/images/fitbit_rosa.jpg" class="boton-enlace">
+                            <img src="/src/assets/images/minifitbit_rosa.jpg" alt="Fitbit Rosa" class="imagen-boton">
+                            Lilac Bliss
+                        </a></li>
+                        <li><a href="/src/assets/images/fitbit_amarillo.jpg" class="boton-enlace">
+                            <img src="/src/assets/images/minifitbit_amarillo.jpg" alt="Fitbit Amarillo" clas="imagen-boton">
+                            Morning Glow
+                        </a></li>
+                    </ul>
                 </div>
-                <div class="caja-precio-cantidad">
-                    <p>99,95€</p>
+            </section>
+                <p class="precio"></p>
+                <section>
+               
+                <div class="caja-precio">
+                    <h2>99,95€</h2>
+                    <hr>
+                    <br>
+                    <button class="carrito">Add to Cart</button>
                 </div>
-            </div>
+            </div>  
         </div>
 
     </main>
-    <footer>
-        <div class="foot1">
-            <img src="src/images/icons/SM-x.svg" alt="twitter">
-            <img src="src/images/icons/SM-instagram.svg" alt="instagram">
-            <img src="src/images/icons/SM-facebook.svg" alt="facebook">
-            <img src="src/images/icons/SM-youtube.svg" alt="youtube">
-            <img src="src/images/icons/SM-tiktok.svg" alt="tiktok">
-            </div>
-        <div class="foot2">
-            <img src="src/images/icons/Spain.svg" alt="Spain"><p>Spain</p>
-            <p>Privacy</p>
-            <p>Google Nest Commitment to Privacy</p>
-            <p>Sales Terms</p>
-            <p>Terms of Service</p>
-        </div>
+    <footer id="footer-placeholder"></footer>
 
-    </footer>
+    <script src="/src/assets/js/script.js"></script>
 </body>
 </html>
